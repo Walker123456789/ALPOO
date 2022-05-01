@@ -1,0 +1,48 @@
+﻿<Window x:Name="frmAlumno1" x:Class="CapaPresentación.frmAlumno"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:CapaPresentación"
+        mc:Ignorable="d"
+        Title="frmAlumno" Height="450" Width="800">
+    <Grid Margin="0,0,3.6,1.19">
+        <Grid.Background>
+            <LinearGradientBrush EndPoint="0.5,1" MappingMode="RelativeToBoundingBox" StartPoint="0.5,0">
+                <GradientStop Color="#FF005794"/>
+                <GradientStop Color="White" Offset="0.177"/>
+                <GradientStop Color="White" Offset="0.181"/>
+                <GradientStop Color="#FF075B97" Offset="0.007"/>
+            </LinearGradientBrush>
+        </Grid.Background>
+        <TextBox x:Name="txtApellidos" HorizontalAlignment="Left" Height="23" Margin="128,40,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" FontFamily="SimSun" FontSize="14"/>
+        <TextBox x:Name="txtNombres" HorizontalAlignment="Left" Height="23" Margin="128,82,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" FontFamily="SimSun" FontSize="14"/>
+        <TextBox x:Name="txtCodigo" HorizontalAlignment="Left" Height="23" Margin="128,125,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" FontFamily="SimSun" FontSize="14"/>
+        <TextBox x:Name="txtDomicilio" HorizontalAlignment="Left" Height="23" Margin="128,221,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" FontFamily="SimSun" FontSize="14"/>
+        <TextBox x:Name="txtCorreo" HorizontalAlignment="Left" Height="23" Margin="128,172,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" FontFamily="SimSun" FontSize="14"/>
+        <TextBox x:Name="txtMetodoEstudio" HorizontalAlignment="Left" Height="23" Margin="465,91,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" FontFamily="SimSun" FontSize="14"/>
+        <TextBox x:Name="txtLugarNac" HorizontalAlignment="Left" Height="23" Margin="155,308,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" FontFamily="SimSun" FontSize="14"/>
+        <TextBox x:Name="txtEscuela" HorizontalAlignment="Left" Height="23" Margin="465,40,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" FontFamily="SimSun" FontSize="14"/>
+        <DatePicker x:Name="dtpFechaNac" HorizontalAlignment="Left" Margin="153,266,0,0" VerticalAlignment="Top" FontFamily="SimSun" FontSize="14"/>
+        <Label Content="Apellidos" HorizontalAlignment="Left" Margin="41,39,0,0" VerticalAlignment="Top" FontFamily="SimSun" FontSize="15"/>
+        <Label Content="Nombres" HorizontalAlignment="Left" Margin="47,80,0,0" VerticalAlignment="Top" FontFamily="SimSun" FontSize="15"/>
+        <Label Content="Correo" HorizontalAlignment="Left" Margin="51,171,0,0" VerticalAlignment="Top" FontFamily="SimSun" FontSize="15"/>
+        <Label Content="Domicilio" HorizontalAlignment="Left" Margin="40,220,0,0" VerticalAlignment="Top" FontFamily="SimSun" FontSize="15"/>
+        <Label Content="Fecha de Nacimiento" HorizontalAlignment="Left" Margin="5,262,0,0" VerticalAlignment="Top" FontFamily="SimSun" FontSize="14"/>
+        <Label Content="Lugar de Nacimiento" HorizontalAlignment="Left" Margin="10,308,0,0" VerticalAlignment="Top" FontSize="14" FontFamily="SimSun"/>
+        <Label Content="Escuela" HorizontalAlignment="Left" Margin="356,40,0,0" VerticalAlignment="Top" FontFamily="SimSun" FontSize="15"/>
+        <Label Content="Método de Estudio" HorizontalAlignment="Left" Margin="322,91,0,0" VerticalAlignment="Top" FontFamily="SimSun" FontSize="15"/>
+        <Label Content="Codigo" HorizontalAlignment="Left" Margin="50,124,0,0" VerticalAlignment="Top" FontFamily="SimSun" FontSize="15"/>
+        <Button x:Name="btnLeer" Content="Leer" HorizontalAlignment="Left" Margin="128,350,0,0" VerticalAlignment="Top" Width="75" Height="34" Click="btnLeer_Click" FontFamily="SimSun" FontSize="15"/>
+        <Button x:Name="btnEscribir" Content="Escribir" HorizontalAlignment="Left" Margin="242,350,0,0" VerticalAlignment="Top" Width="75" Height="34" Click="btnEscribir_Click" FontFamily="SimSun" FontSize="15"/>
+        <Button x:Name="btnMetodo1" Content="Método 1" HorizontalAlignment="Left" Margin="349,350,0,0" VerticalAlignment="Top" Width="75" Height="34" Click="btnMetodo1_Click" FontFamily="SimSun" FontSize="15"/>
+        <Button x:Name="btnMetodo2" Content="Método 2" HorizontalAlignment="Left" Margin="465,350,0,0" VerticalAlignment="Top" Width="75" Height="34" Click="btnMetodo2_Click" FontFamily="SimSun" FontSize="15"/>
+        <Button x:Name="btnMetodo3" Content="Método 3" HorizontalAlignment="Left" Margin="586,350,0,0" VerticalAlignment="Top" Width="75" Height="34" Click="btnMetodo3_Click" FontFamily="SimSun" FontSize="15"/>
+        <Label Content="Seguro" HorizontalAlignment="Left" Margin="364,150,0,0" VerticalAlignment="Top" FontFamily="SimSun" FontSize="15"/>
+        <ComboBox x:Name="cboSeguro" HorizontalAlignment="Left" Margin="465,151,0,0" VerticalAlignment="Top" Width="120" SelectionChanged="cboSeguro_SelectionChanged" FontFamily="SimSun" FontSize="14">
+            <ListBoxItem Content="true"/>
+            <ListBoxItem Content="false"/>
+        </ComboBox>
+
+    </Grid>
+</Window>

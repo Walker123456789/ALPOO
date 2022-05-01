@@ -1,0 +1,23 @@
+﻿<Window x:Name="frmPrincipal" x:Class="CapaPresentación.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:CapaPresentación"
+        mc:Ignorable="d"
+        Title="frmPrincipal" Height="450" Width="800" Icon="uac.sistema de información.png" FontFamily="SimSun" FontSize="15">
+    <DockPanel>
+        <Menu DockPanel.Dock="Top" Height="420.4">
+            <MenuItem Header = "Mantenimiento" FontFamily="SimSun" FontSize="15">
+                <MenuItem Header = "Alumno" Name= "menuAlumno" Click="menuAlumno_Click"/>
+                <MenuItem Header = "Docente" Name= "menuDocente" Click="menuDocente_Click"/>
+                <MenuItem Header = "Administrativo" Name= "menuAdministrativo" Click="menuAdministrativo_Click"/>
+            </MenuItem>
+            <MenuItem Header = "Depurar" FontFamily="SimSun" FontSize="15"></MenuItem>
+            <MenuItem Header= "Proceso" FontFamily="SimSun" FontSize="15"></MenuItem>
+            <MenuItem Header= "Seguridad" FontFamily="SimSun" FontSize="15"></MenuItem>
+            <MenuItem Header= "Ayuda" FontFamily="SimSun" FontSize="15"></MenuItem>
+            <MenuItem Header= "Salir" Name = "MenuSalir" Click="MenuSalir_Click" FontFamily="SimSun" FontSize="15"/>
+        </Menu>
+    </DockPanel>
+</Window>
